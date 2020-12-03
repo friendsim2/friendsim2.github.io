@@ -1,2 +1,2 @@
 var canvas = document.getElementById("canvas");
-canvas.style.background-color = "#888";
+canvas.background-color = "#888";
