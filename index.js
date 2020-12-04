@@ -1,5 +1,11 @@
-while (0)
-{
+//variables
 var canvas = document.getElementById("canvas");
-canvas.background-color = "#888";
+
+//game
+window.reqestAnimatioFrame(everything);
+function everything(){
+  
+  canvas.background-color = "#888";
+  
+window.reqestAnimatioFrame(everything);
 }
