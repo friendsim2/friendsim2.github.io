@@ -1,1 +1,1 @@
-document.getElementById("layer1").style.width = "200";
+document.getElementById("theCanvas").style.width = "200";
