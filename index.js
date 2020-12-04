@@ -4,7 +4,7 @@ var canvas = document.querySelector("#canvas");
 //game
 function everything(){
   
-  canvas.style.backgroundColor = "#888";
+  canvas.style.backgroundColor = "#F00";
   
 window.reqestAnimatioFrame(everything);
 }
