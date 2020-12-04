@@ -1,11 +1,11 @@
 //variables
-var canvas = document.getElementById("canvas").style;
+var canvas = document.getElementById("canvas");
 
 //game
 window.reqestAnimatioFrame(everything);
 function everything(){
   
-  canvas.background-color = "#888";
+  canvas.backgroundColor = "#888";
   
 window.reqestAnimatioFrame(everything);
 }
