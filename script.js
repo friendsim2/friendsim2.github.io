@@ -11,9 +11,11 @@ function game() {
   if (w/16 > h/9){
     canvas.style.height = h;
     canvas.style.width = h*(16/9);
+    canvas.style.left = h-canvas.style.height;
   } else {
     canvas.style.width = w;
     canvas.style.height = w*(9/16);
+    canvas.style.top = h-canvas.style.height;
   }
   
   
