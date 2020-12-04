@@ -1,5 +1,5 @@
 //variables
-var canvas = document.getElementById("canvas");
+var canvas = document.getElementById("canvas").style;
 
 //game
 window.reqestAnimatioFrame(everything);
