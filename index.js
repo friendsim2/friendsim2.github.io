@@ -1,5 +1,4 @@
 //variables
-var canvas = document.getElementById("canvas").style;
 
 //game
 function everything(){
