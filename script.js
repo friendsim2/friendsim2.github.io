@@ -1,8 +1,8 @@
-var canvas = document.getElementById("theCanvas").style;
+var canvas = document.getElementById("theCanvas");
 
 function game() {
   
-  canvas.width = "200";
+  canvas.style.width = "200";
   
 requestAnimationFrame(game);}
 requestAnimationFrame(game);
