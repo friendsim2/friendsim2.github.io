@@ -1,5 +1,5 @@
 //variables
-var layer1 = document.querySelector("#layer1");
+var layer1 = document.getElementById("layer1");
 
 //game
 function everything(){
