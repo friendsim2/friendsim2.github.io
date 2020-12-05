@@ -8,7 +8,7 @@ var windowHeight = 720;
 function setDimensions(width, height){
   gameWindow.style.width = width;
   gameWindow.style.height = height;
-  document.getElementById("dialogue").style.fontSize = height*(34/1080);
+  document.getElementById("dialogueText").style.fontSize = height*(34/1080);
 }
 
 // Game time
