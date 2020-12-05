@@ -2,7 +2,6 @@
 var gameWindow = document.getElementById("gameWindow");
 var w = 1280;
 var h = 720;
-var dialogue = document.getElementById("dialogue");
 
 // Game time
 function game() {
@@ -17,7 +16,7 @@ function game() {
     gameWindow.style.height = w*(9/16);
   }
   // More aspect ratio stuff
-  dialogue.style.fontSize = gameWindow.style.height*(38/1080);
+  document.getElementById("dialogue").style.fontSize = gameWindow.style.height*(38/1080);
   
   
   
