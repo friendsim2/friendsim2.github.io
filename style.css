@@ -12,19 +12,23 @@ p {
 
 #dialogueLeft {
   display:inline-block;
+  width: 500;
+  height: 250;
   border-right: 250 solid #6F210E;
   border-top: 250 solid transparent;
   border-bottom: 250 solid transparent;
 }
 #dialogueBox {
-  text-align: center;
   display:inline-block;
   width: 500;
   height: 250;
   background-color: #6F210E;
+  text-align: center;
 }
 #dialogueRight {
   display:inline-block;
+  width: 500;
+  height: 250;
   border-left: 250 solid #6F210E;
   border-top: 250 solid transparent;
   border-bottom: 250 solid transparent;
