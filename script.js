@@ -1,26 +1,28 @@
-// These make sure the canvas looks right
+// Variables
 var gameWindow = document.getElementById("gameWindow");
 var w = 1280;
 var h = 720;
-var gameW = 1;
-var gameH = 1;
+
+// Functions used for the game
+// The following keeps everything the correct size.
+function setDimensions(width, height){
+  gameWindow.style.width = width;
+  gameWindow.style.height = height;
+  document.getElementById("dialogueBox").style.width = width*(1390/1920);
+  document.getElementById("dialogueBox").style.height = height*(262/1080);
+  document.getElementById("dialogue").style.fontSize = height*(38/1080);
+}
 
 // Game time
 function game() {
-  // The following sets of lines keep everything the correct size or aspect ratio.
-  w = window.innerWidth;
-  h = window.innerHeight;
+  // Plugs in the syntax which keeps everything the correct size.
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
   if (w/16 > h/9){
-    gameWindow.style.height = gameH = h;
-    gameWindow.style.width = gameW = h*(16/9);
+    setDimensions(windowHeight*(16/9), windowHeight);
   } else {
-    gameWindow.style.width = gameW = w;
-    gameWindow.style.height = gameH = w*(9/16);
+    setDimensions(windowWidth, windowWidth*(9/16));
   }
-  // More aspect ratio stuff
-  document.getElementById("dialogueBox").style.width = gameW*(1390/1920);
-  document.getElementById("dialogueBox").style.height = gameH*(262/1080);
-  document.getElementById("dialogue").style.fontSize = h*(38/1080);
   
   
   
