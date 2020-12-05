@@ -1,7 +1,7 @@
 // Variables
 var gameWindow = document.getElementById("gameWindow");
-var w = 1280;
-var h = 720;
+var windowWidth = 1280;
+var windowHeight = 720;
 
 // Functions used for the game
 // The following keeps everything the correct size.
