@@ -2,6 +2,9 @@ body {
   margin:0;
   overflow: hidden;
 }
+#dialogue {
+  font-size: gameWindow.style.height*(38/1080);
+}
 #gameWindow {
   background-color: #000;
   overflow:hidden;
