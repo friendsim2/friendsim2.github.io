@@ -17,6 +17,7 @@ p {
   border-bottom: 52px solid transparent;
 }
 #dialogueBox {
+  text-align: center;
   display:inline-block;
   width: 60px;
   height: 104px;
