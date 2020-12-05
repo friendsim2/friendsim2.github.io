@@ -16,7 +16,7 @@ function game() {
     gameWindow.style.height = w*(9/16);
   }
   // More aspect ratio stuff
-  document.getElementById("dialogue").style.fontSize = gameWindow.style.height*(38/1080);
+  document.getElementById("dialogue").style.fontSize = h*(38/1080);
   
   
   
