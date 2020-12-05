@@ -9,7 +9,10 @@ p {
   background-color: #000;
   overflow: hidden;
 }
-
+#dialogue {
+  width: 200;
+  height: 200;
+}
 #dialogueLeft {
   border-right: 30px solid #6F210E;
   border-top: 52px solid transparent;
