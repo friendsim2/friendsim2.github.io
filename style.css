@@ -11,11 +11,13 @@ p {
 }
 
 #dialogueLeft {
+  display:inline-block;
   border-right: 30px solid #6F210E;
   border-top: 52px solid transparent;
   border-bottom: 52px solid transparent;
 }
 #dialogueBox {
+  display:inline-block;
   width: 60px;
   height: 104px;
   background-color: #6F210E;
