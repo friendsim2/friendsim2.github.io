@@ -18,7 +18,7 @@ function game() {
   // Plugs in the syntax which keeps everything the correct size.
   windowWidth = window.innerWidth;
   windowHeight = window.innerHeight;
-  if (w/16 > h/9){
+  if (windowWidth/16 > windowHeight/9){
     setDimensions(windowHeight*(16/9), windowHeight);
   } else {
     setDimensions(windowWidth, windowWidth*(9/16));
