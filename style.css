@@ -12,20 +12,20 @@ p {
 
 #dialogueLeft {
   display:inline-block;
-  border-right: 500 solid #6F210E;
-  border-top: 500 solid transparent;
-  border-bottom: 500 solid transparent;
+  border-right: 250 solid #6F210E;
+  border-top: 250 solid transparent;
+  border-bottom: 250 solid transparent;
 }
 #dialogueBox {
   text-align: center;
   display:inline-block;
-  width: 1000;
-  height: 500;
+  width: 500;
+  height: 250;
   background-color: #6F210E;
 }
 #dialogueRight {
   display:inline-block;
-  border-left: 500 solid #6F210E;
-  border-top: 500 solid transparent;
-  border-bottom: 500 solid transparent;
+  border-left: 250 solid #6F210E;
+  border-top: 250 solid transparent;
+  border-bottom: 250 solid transparent;
 }
