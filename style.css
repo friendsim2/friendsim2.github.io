@@ -23,7 +23,6 @@ p {
   background-color: #6F210E;
 }
 #dialogueRight {
-  float: left;
   border-left: 30px solid #6F210E;
   border-top: 52px solid transparent;
   border-bottom: 52px solid transparent;
