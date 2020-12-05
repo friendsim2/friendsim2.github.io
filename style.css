@@ -4,6 +4,7 @@ body {
 }
 #gameWindow {
   background-color: #000;
+  overflow:hidden;
   width: 1280;
   height: 720;
   position: absolute;
