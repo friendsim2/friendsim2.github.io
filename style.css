@@ -12,11 +12,9 @@ p {
 
 #dialogueLeft {
   display:inline-block;
-  width: 500;
-  height: 250;
   border-right: 250 solid #6F210E;
-  border-top: 250 solid transparent;
-  border-bottom: 250 solid transparent;
+  border-top: 125 solid transparent;
+  border-bottom: 125 solid transparent;
 }
 #dialogueBox {
   display:inline-block;
@@ -27,9 +25,7 @@ p {
 }
 #dialogueRight {
   display:inline-block;
-  width: 500;
-  height: 250;
   border-left: 250 solid #6F210E;
-  border-top: 250 solid transparent;
-  border-bottom: 250 solid transparent;
+  border-top: 125 solid transparent;
+  border-bottom: 125 solid transparent;
 }
