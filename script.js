@@ -8,8 +8,6 @@ var windowHeight = 720;
 function setDimensions(width, height){
   gameWindow.style.width = width;
   gameWindow.style.height = height;
-  document.getElementById("dialogueBox").style.width = width*(1390/1920);
-  document.getElementById("dialogueBox").style.height = height*(262/1080);
   document.getElementById("dialogue").style.fontSize = height*(34/1080);
 }
 
@@ -18,10 +16,10 @@ function game() {
   // Plugs in the syntax which keeps everything the correct size.
   windowWidth = window.innerWidth;
   windowHeight = window.innerHeight;
-  if (window.innerWidth/16 > window.innerHeigh/9){
-    setDimensions(window.innerHeigh*(16/9), window.innerHeigh);
+  if (windowWidth/16 > windowHeight/9){
+    setDimensions(windowHeight*(16/9), windowHeight);
   } else {
-    setDimensions(window.innerWidth, window.innerWidt*(9/16));
+    setDimensions(windowWidth, windowWidth*(9/16));
   }
   
   
