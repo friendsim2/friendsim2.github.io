@@ -11,15 +11,13 @@ function game() {
   w = window.innerWidth;
   h = window.innerHeight;
   if (w/16 > h/9){
-    gameWindow.style.height = h;
-    gameWindow.style.width = h*(16/9);
+    gameWindow.style.height = gameH = h;
+    gameWindow.style.width = gameW = h*(16/9);
   } else {
-    gameWindow.style.width = w;
-    gameWindow.style.height = w*(9/16);
+    gameWindow.style.width = gameW = w;
+    gameWindow.style.height = gameH = w*(9/16);
   }
   // More aspect ratio stuff
-  gameW = gameWindow.style.width;
-  gameH = gameWindow.style.height;
   document.getElementById("dialogueBox").style.width = gameW*(1390/1920);
   document.getElementById("dialogueBox").style.height = gameH*(262/1080);
   document.getElementById("dialogue").style.fontSize = h*(38/1080);
