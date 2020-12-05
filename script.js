@@ -2,6 +2,8 @@
 var gameWindow = document.getElementById("gameWindow");
 var w = 1280;
 var h = 720;
+var gameW = 1;
+var gameH = 1;
 
 // Game time
 function game() {
@@ -16,10 +18,10 @@ function game() {
     gameWindow.style.height = w*(9/16);
   }
   // More aspect ratio stuff
-  w = gameWindow.style.width;
-  h = gameWindow.style.height;
-  document.getElementById("dialogueBox").style.width = w*(1390/1920);
-  document.getElementById("dialogueBox").style.height = h*(262/1080);
+  gameW = gameWindow.style.width;
+  gameH = gameWindow.style.height;
+  document.getElementById("dialogueBox").style.width = gameW*(1390/1920);
+  document.getElementById("dialogueBox").style.height = gameH*(262/1080);
   document.getElementById("dialogue").style.fontSize = h*(38/1080);
   
   
