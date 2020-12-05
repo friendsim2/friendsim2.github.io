@@ -7,7 +7,6 @@ p {
 }
 
 #gameWindow {
-  margin: auto;
   background-color: #000;
   overflow:hidden;
 }
