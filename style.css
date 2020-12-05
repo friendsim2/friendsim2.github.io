@@ -1,11 +1,12 @@
 body {
-  margin: auto;
+  margin: 0;
 }
 p {
   font-weight: bold;
 }
 
 #gameWindow {
+  margin: auto;
   background-color: #000;
   overflow:hidden;
 }
