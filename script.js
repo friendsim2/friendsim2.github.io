@@ -25,8 +25,8 @@ function game() {
   }
   document.getElementById("gameWindow").style.width = width;
   document.getElementById("gameWindow").style.height = height;
-  document.getElementById("borderTop").style.borderBottom = "50px solid #777";
-  document.getElementById("borderBottom").style.borderTop = "50px solid #777";
+  document.getElementById("borderTop").style.borderBottom = "100px solid #777";
+  document.getElementById("borderBottom").style.borderTop = "100px solid #777";
   changeChildren("#textbox", "width", "200px");
   changeChildren("#textbox", "borderLeft", "50px solid transparent");
   changeChildren("#textbox", "borderRight", "50px solid transparent");
