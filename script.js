@@ -32,9 +32,9 @@ function game() {
   changeChildren("#textbox", "borderRight", "50px solid transparent");
   document.getElementById("contentTop").style.borderBottom = "25px solid #555";
   document.getElementById("contentBottom").style.borderTop = "25px solid #555";
-  changeChildren("#contentTop", "width", "100px");
-  changeChildren("#contentTop", "borderLeft", "25px solid transparent");
-  changeChildren("#contentTop", "borderRight", "25px solid transparent");
+  changeChildren("#borderTop", "width", "100px");
+  changeChildren("#borderTop", "borderLeft", "25px solid transparent");
+  changeChildren("#borderTop", "borderRight", "25px solid transparent");
   
   
   // These requestAnimationFrames start the game and keep it going.
