@@ -7,11 +7,12 @@ var part = document.getElementById("tetbox").getElementById("borderTop").style
 
 
 function changeChildren(query, cssStyle, newValue) {
-  x = eval("document.querySelector("+query+").children");
+  eval("x = document.querySelector("+query+").children");
   for (i = 0; i < x.length; i++) {
-    eval("x[i].style."+cssStyle) = eval(newValue);
+    eval("x[i].style."+cssStyle+") = "+newValue+";")
   }
 }
+
 
 // The following keeps everything the correct size.
 function setDimensions(width, height){
