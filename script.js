@@ -3,7 +3,6 @@ var windowWidth = 1280;
 var windowHeight = 720;
 var width;
 var height;
-var part = document.getElementById("tetbox").getElementById("borderTop").style
 
 
 
