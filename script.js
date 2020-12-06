@@ -4,18 +4,24 @@ var windowWidth = 1280;
 var windowHeight = 720;
 var part = document.getElementById("tetbox").getElementById("borderTop").style
 
+
+
+function changeChildren(query, cssStyle, newValue) {
+  x = eval("document.querySelector("+query+").children");
+  for (i = 0; i < x.length; i++) {
+    eval("x[i].style."+cssStyle) = eval(newValue);
+  }
+}
+
 // The following keeps everything the correct size.
 function setDimensions(width, height){
   document.getElementById("gameWindow").style.width = width;
   document.getElementById("gameWindow").style.height = height;
   document.getElementById("borderTop").style.borderBottom = 50px solid #555;
   document.getElementById("borderBottom").style.borderTop = 50px solid #555;
-  document.querySelectorAll("#tetbox > div")[0].style.width = 25px;
-  document.querySelectorAll("#tetbox > div")[0].style.borderLeft = 25px solid transparent;
-  document.querySelectorAll("#tetbox > div")[0].style.borderRight = 25px solid transparent;
-  document.querySelectorAll("#tetbox > div")[1].style.width = 25px;
-  document.querySelectorAll("#tetbox > div")[1].style.borderLeft = 25px solid transparent;
-  document.querySelectorAll("#tetbox > div")[1].style.borderRight = 25px solid transparent;
+  changeChildren("#textbox", "width", "25px")
+  changeChildren("#textbox", "borderLeft", "25px solid transparent")
+  changeChildren("#textbox", "borderRight", "25px solid transparent")
   
   
   document.getElementById("dialogueText").style.fontSize = height*(34/1080);
