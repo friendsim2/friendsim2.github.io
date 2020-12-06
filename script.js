@@ -10,7 +10,7 @@ function changeChildren(query, cssStyle, newValue) {
   let x = document.querySelector(query).children;
   let i;
   for (i = 0; i < x.length; i++) {
-    x[i].style.cssStyle = newValue;
+    x[i].style.[cssStyle] = newValue;
   }
 }
 
@@ -20,9 +20,9 @@ function setDimensions(width, height){
   document.getElementById("gameWindow").style.height = height;
   document.getElementById("borderTop").style.borderBottom = 50px solid #555;
   document.getElementById("borderBottom").style.borderTop = 50px solid #555;
-  changeChildren("#textbox", width, 25px);
-  changeChildren("#textbox", borderLeft, 25px solid transparent);
-  changeChildren("#textbox", borderRight, 25px solid transparent);
+  changeChildren("#textbox", "width", 25px);
+  changeChildren("#textbox", "borderLeft", 25px solid transparent);
+  changeChildren("#textbox", "borderRight", 25px solid transparent);
   
   
   document.getElementById("dialogueText").style.fontSize = height*(34/1080);
