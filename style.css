@@ -13,6 +13,9 @@ p {
 #textbox > * {
   margin: auto;
 }
+#borderTop > * {
+  margin: auto;
+}
 
 #dialogueText {
   color: #FFF;
