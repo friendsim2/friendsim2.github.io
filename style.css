@@ -13,9 +13,6 @@ p {
 #textbox > * , #textbox > * > * {
   margin: auto;
 }
-#contentTop {
-  margin-top: 5px;
-}
 
 #dialogueText {
   color: #FFF;
