@@ -17,7 +17,7 @@ p {
 
 
 #textbox > div {
-  width: 50px;
+  width: 0px;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
 }
