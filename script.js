@@ -14,6 +14,7 @@ function game() {
   windowHeight = window.innerHeight;
   if (windowWidth/16 > windowHeight/9){
     width = windowHeight*(16/9);
+    alert(width)
     height = windowHeight;
   } else {
     width = windowWidth;
