@@ -14,16 +14,3 @@ p {
   color: #FFF;
   font-family: courier new;
 }
-
-
-#textbox > div {
-  width: 0px;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-}
-#textbox > #a {
-  border-bottom: 50px solid #555;
-}
-#textbox > #b {
-  border-top: 50px solid #555;
-}
