@@ -8,7 +8,7 @@ var part = document.getElementById("tetbox").getElementById("borderTop").style
 // Gives every child of an element the same style
 // changeChildren("#textbox", "width", "25px"); makes all children of #textmox have a width of 25px
 function changeChildren(query, cssStyle, newValue) {
-  eval("x = document.querySelector('"+query+"').children");
+  x = document.querySelector(query).children;
   for (i = 0; i < x.length; i++) {
     eval("x[i].style."+cssStyle+") = "+newValue+";");
   }
