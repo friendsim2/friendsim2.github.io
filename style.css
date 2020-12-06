@@ -8,6 +8,8 @@ p {
 #gameWindow {
   background-color: #000;
   overflow: hidden;
+  width: 10;
+  height: 10;
 }
 
 #dialogueText {
