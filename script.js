@@ -5,14 +5,7 @@ var width;
 var height;
 var part = document.getElementById("tetbox").getElementById("borderTop").style
 
-// Gives every child of an element the same style
-// changeChildren("#textbox", "width", 25px); makes all children of #textbox have a width of 25px
-function changeChildren(query, cssStyle, newValue) {
-  let x = document[query].children;
-  for (let i = 0; i < x.length; i++) {
-    x[i].style[cssStyle] = newValue;
-  }
-}
+
 
 // Game time
 function game() {
@@ -28,11 +21,6 @@ function game() {
   }
   document.getElementById("gameWindow").style.width = width;
   document.getElementById("gameWindow").style.height = height;
-  document.getElementById("borderTop").style.borderBottom = 50px solid #555;
-  document.getElementById("borderBottom").style.borderTop = 50px solid #555;
-  changeChildren("#textbox", "width", 25px);
-  changeChildren("#textbox", "borderLeft", 25px solid transparent);
-  changeChildren("#textbox", "borderRight", 25px solid transparent);
   
   
   
