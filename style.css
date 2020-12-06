@@ -10,10 +10,7 @@ p {
   overflow: hidden;
 }
 
-#textbox > * {
-  margin: auto;
-}
-#borderTop > * {
+#textbox > * , #textbox > * > * {
   margin: auto;
 }
 #contentTop {
