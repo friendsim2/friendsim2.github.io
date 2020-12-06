@@ -1,13 +1,12 @@
 // Variables
-var gameWindow = document.getElementById("gameWindow");
 var windowWidth = 1280;
 var windowHeight = 720;
 
 // Functions used for the game
 // The following keeps everything the correct size.
 function setDimensions(width, height){
-  gameWindow.style.width = width;
-  gameWindow.style.height = height;
+  document.getElementById("gameWindow").style.width = width;
+  document.getElementById("gameWindow").style.height = height;
   document.getElementById("dialogueText").style.fontSize = height*(34/1080);
 }
 
