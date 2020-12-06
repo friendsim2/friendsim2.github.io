@@ -25,13 +25,13 @@ function game() {
   }
   document.getElementById("gameWindow").style.width = width;
   document.getElementById("gameWindow").style.height = height;
-  document.getElementById("borderTop").style.borderBottom = "50px solid #555";
-  document.getElementById("borderBottom").style.borderTop = "50px solid #555";
+  document.getElementById("borderTop").style.borderBottom = "50px solid #777";
+  document.getElementById("borderBottom").style.borderTop = "50px solid #777";
   changeChildren("#textbox", "width", "200px");
   changeChildren("#textbox", "borderLeft", "50px solid transparent");
   changeChildren("#textbox", "borderRight", "50px solid transparent");
-  document.getElementById("contentTop").style.borderBottom = "25px solid #555";
-  document.getElementById("contentBottom").style.borderTop = "25px solid #555";
+  document.getElementById("contentTop").style.borderBottom = "25px solid #BBB";
+  document.getElementById("contentBottom").style.borderTop = "25px solid #BBB";
   changeChildren("#borderTop", "width", "100px");
   changeChildren("#borderTop", "borderLeft", "25px solid transparent");
   changeChildren("#borderTop", "borderRight", "25px solid transparent");
