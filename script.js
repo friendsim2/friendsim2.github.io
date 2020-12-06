@@ -8,11 +8,11 @@ var part = document.getElementById("tetbox").getElementById("borderTop").style
 function setDimensions(width, height){
   document.getElementById("gameWindow").style.width = width;
   document.getElementById("gameWindow").style.height = height;
-  document.getElementById("borderTop").borderBottom = 50px solid #555;
-  document.getElementById("borderBottom").borderTop = 50px solid #555;
-  document.getElementById("tetbox").querySelectorAll("div").width = 25px;
-  document.getElementById("tetbox").querySelectorAll("div").borderLeft = 25px solid transparent;
-  document.getElementById("tetbox").querySelectorAll("div").borderRight = 25px solid transparent;
+  document.getElementById("borderTop").style.borderBottom = 50px solid #555;
+  document.getElementById("borderBottom").style.borderTop = 50px solid #555;
+  document.getElementById("tetbox").querySelectorAll("div").style.width = 25px;
+  document.getElementById("tetbox").querySelectorAll("div").style.borderLeft = 25px solid transparent;
+  document.getElementById("tetbox").querySelectorAll("div").style.borderRight = 25px solid transparent;
   
   document.getElementById("dialogueText").style.fontSize = height*(34/1080);
 }
