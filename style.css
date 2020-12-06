@@ -10,10 +10,6 @@ p {
   overflow: hidden;
 }
 
-#textbox {
-  width: 0;
-  margin: auto;
-}
 #textbox > * {
   margin: auto;
 }
