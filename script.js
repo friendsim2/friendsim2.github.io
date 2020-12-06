@@ -4,7 +4,12 @@ var windowHeight = 720;
 var width;
 var height;
 
-
+function changeChildren(query, cssStyle, newValue) {
+  let x = document[query].children;
+  for (let i = 0; i < x.length; i++) {
+    x[i].style[cssStyle] = newValue;
+  }
+}
 
 // Game time
 function game() {
@@ -13,7 +18,6 @@ function game() {
   windowHeight = window.innerHeight;
   if (windowWidth/16 > windowHeight/9){
     width = windowHeight*(16/9);
-    console.log(width);
     height = windowHeight;
   } else {
     width = windowWidth;
@@ -21,7 +25,11 @@ function game() {
   }
   document.getElementById("gameWindow").style.width = width;
   document.getElementById("gameWindow").style.height = height;
-  
+  document.getElementById("borderTop").style.borderBottom = 50px solid #555;
+  document.getElementById("borderBottom").style.borderTop = 50px solid #555;
+  changeChildren("#textbox", "width", 25px);
+  changeChildren("#textbox", "borderLeft", 25px solid transparent);
+  changeChildren("#textbox", "borderRight", 25px solid transparent);
   
   
   // These requestAnimationFrames start the game and keep it going.
