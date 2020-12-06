@@ -7,7 +7,7 @@ var part = document.getElementById("tetbox").getElementById("borderTop").style
 
 
 function changeChildren(query, cssStyle, newValue) {
-  eval("x = document.querySelector("+query+").children");
+  eval("x = document.querySelector('"+query+"').children");
   for (i = 0; i < x.length; i++) {
     eval("x[i].style."+cssStyle+") = "+newValue+";")
   }
