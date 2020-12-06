@@ -10,9 +10,13 @@ function setDimensions(width, height){
   document.getElementById("gameWindow").style.height = height;
   document.getElementById("borderTop").style.borderBottom = 50px solid #555;
   document.getElementById("borderBottom").style.borderTop = 50px solid #555;
-  document.querySelectorAll("#tetbox > div").style.width = 25px;
-  document.querySelectorAll("#tetbox > div").style.borderLeft = 25px solid transparent;
-  document.querySelectorAll("#tetbox > div").style.borderRight = 25px solid transparent;
+  document.querySelectorAll("#tetbox > div")[0].style.width = 25px;
+  document.querySelectorAll("#tetbox > div")[0].style.borderLeft = 25px solid transparent;
+  document.querySelectorAll("#tetbox > div")[0].style.borderRight = 25px solid transparent;
+  document.querySelectorAll("#tetbox > div")[1].style.width = 25px;
+  document.querySelectorAll("#tetbox > div")[1].style.borderLeft = 25px solid transparent;
+  document.querySelectorAll("#tetbox > div")[1].style.borderRight = 25px solid transparent;
+  
   
   document.getElementById("dialogueText").style.fontSize = height*(34/1080);
 }
