@@ -1,19 +1,28 @@
 // Variables
+var x, i;
 var windowWidth = 1280;
 var windowHeight = 720;
-var textboxPart = document.getElementById("tetbox").getElementById("borderTop");
+var part = document.getElementById("tetbox").getElementById("borderTop").style
 
-// Functions used for the game
+// For when you need to change the css of all children
+function changeChildren(parentAndChildren, oldStyle, newStyle) {
+  x = parentAndChildren;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.oldStyle = newStyle;
+  }
+}
+
 // The following keeps everything the correct size.
 function setDimensions(width, height){
   document.getElementById("gameWindow").style.width = width;
   document.getElementById("gameWindow").style.height = height;
-  textboxPart = document.getElementById("tetbox").childNodes;
-  textboxPart.style.width = 0px;
-  textboxPart.style.borderLeft = 25px solid transparent;
-  textboxPart.style.borderRight = 25px solid transparent;
-  document.getElementById("borderTop").borderBottom: 50px solid #555;
-  document.getElementById("borderBottom").borderTop: 50px solid #555;
+  changeChildren(getElementById("tetbox"), "div", width, 25px)
+  changeChildren(getElementById("tetbox"), "div", width, 25px)
+  document.getElementById("borderTop").borderBottom = 50px solid #555;
+  document.getElementById("borderBottom").borderTop = 50px solid #555;
+  changeChildren(document.getElementById("tetbox").querySelectorAll("div"), width, 25px);
+  changeChildren(document.getElementById("tetbox").querySelectorAll("div"), borderLeft, 25px solid transparent);
+  changeChildren(document.getElementById("tetbox").querySelectorAll("div"), borderRight, 25px solid transparent);
   
   document.getElementById("dialogueText").style.fontSize = height*(34/1080);
 }
