@@ -5,7 +5,7 @@ var width;
 var height;
 
 function changeChildren(query, cssStyle, newStyle) {
-  let x = document[query].children;
+  let x = document.querySelector(query).children;
   for (let i = 0; i < x.length; i++) {
     x[i].style[cssStyle] = newStyle;
   }
