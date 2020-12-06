@@ -10,6 +10,10 @@ p {
   overflow: hidden;
 }
 
+#textbox {
+  margin: auto;
+}
+
 #dialogueText {
   color: #FFF;
   font-family: courier new;
