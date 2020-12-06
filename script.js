@@ -25,11 +25,11 @@ function game() {
   }
   document.getElementById("gameWindow").style.width = width;
   document.getElementById("gameWindow").style.height = height;
-  document.getElementById("borderTop").style.borderBottom = 50px solid #555;
-  document.getElementById("borderBottom").style.borderTop = 50px solid #555;
-  changeChildren("#textbox", "width", 25px);
-  changeChildren("#textbox", "borderLeft", 25px solid transparent);
-  changeChildren("#textbox", "borderRight", 25px solid transparent);
+  document.getElementById("borderTop").style.borderBottom = toString(100*width)+"px solid #555";
+  document.getElementById("borderBottom").style.borderTop = toString(100*width)+"px solid #555";
+  changeChildren("#textbox", "width", toString(50*width)+"px");
+  changeChildren("#textbox", "borderLeft", toString(25*width)+"px solid transparent");
+  changeChildren("#textbox", "borderRight", toString(25*width)+"px solid transparent");
   
   
   // These requestAnimationFrames start the game and keep it going.
