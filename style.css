@@ -33,3 +33,11 @@ p {
   color: #FFF;
   font-family: courier new;
 }
+
+
+
+#trap {
+  border-bottom: 50px solid #555;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
