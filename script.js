@@ -1,5 +1,4 @@
 // Variables
-var x, i;
 var windowWidth = 1280;
 var windowHeight = 720;
 var part = document.getElementById("tetbox").getElementById("borderTop").style
@@ -8,12 +7,12 @@ var part = document.getElementById("tetbox").getElementById("borderTop").style
 // Gives every child of an element the same style
 // changeChildren("#textbox", "width", "25px"); makes all children of #textmox have a width of 25px
 function changeChildren(query, cssStyle, newValue) {
-  x = document.querySelector(query).children;
+  let x = document.querySelector(query).children;
+  let i;
   for (i = 0; i < x.length; i++) {
-    eval("x[i].style."+cssStyle+") = "+newValue+";");
+    x[i].style.cssStyle = newValue;
   }
 }
-
 
 // The following keeps everything the correct size.
 function setDimensions(width, height){
@@ -21,9 +20,9 @@ function setDimensions(width, height){
   document.getElementById("gameWindow").style.height = height;
   document.getElementById("borderTop").style.borderBottom = 50px solid #555;
   document.getElementById("borderBottom").style.borderTop = 50px solid #555;
-  changeChildren("#textbox", "width", "25px");
-  changeChildren("#textbox", "borderLeft", "25px solid transparent");
-  changeChildren("#textbox", "borderRight", "25px solid transparent");
+  changeChildren("#textbox", width, 25px);
+  changeChildren("#textbox", borderLeft, 25px solid transparent);
+  changeChildren("#textbox", borderRight, 25px solid transparent);
   
   
   document.getElementById("dialogueText").style.fontSize = height*(34/1080);
