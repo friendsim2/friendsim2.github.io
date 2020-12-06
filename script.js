@@ -25,9 +25,9 @@ function game() {
   }
   document.getElementById("gameWindow").style.width = width;
   document.getElementById("gameWindow").style.height = height;
-  document.getElementById("borderTop").style.borderBottom = "100px solid #555";
-  document.getElementById("borderBottom").style.borderTop = "100px solid #555";
-  changeChildren("#textbox", "width", "50px");
+  document.getElementById("borderTop").style.borderBottom = "25px solid #555";
+  document.getElementById("borderBottom").style.borderTop = "25px solid #555";
+  changeChildren("#textbox", "width", "100px");
   changeChildren("#textbox", "borderLeft", "25px solid transparent");
   changeChildren("#textbox", "borderRight", "25px solid transparent");
   
