@@ -10,13 +10,6 @@ p {
   overflow: hidden;
 }
 
-#textbox > * , #textbox > * > * {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 #dialogueText {
   color: #FFF;
   font-family: courier new;
