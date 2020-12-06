@@ -16,6 +16,9 @@ p {
 #borderTop > * {
   margin: auto;
 }
+#contentTop {
+  margin-top: 5px;
+}
 
 #dialogueText {
   color: #FFF;
