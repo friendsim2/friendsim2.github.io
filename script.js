@@ -45,4 +45,5 @@ function game() {
   // These requestAnimationFrames start the game and keep it going.
 requestAnimationFrame(game);
 }
+fixSizes()
 requestAnimationFrame(game);
