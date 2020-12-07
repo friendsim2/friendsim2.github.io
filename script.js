@@ -26,7 +26,7 @@ function fixSizes() {
   style("#textbox > #content > *", "borderLeft", String(105*scale)+"px solid transparent");
   style("#textbox > #content > *", "borderRight", String(105*scale)+"px solid transparent");
   style("#textbox > #content", "bottom", String(10*scale)+"px");
-  style("#textbox > #dialogueText", "height", String(232*scale)+"px");
+  style("#textbox > #dialogueText", "height", String(262*scale)+"px");
   style("#textbox > #dialogueText", "fontSize", String(32*scale)+"px");
 }
 function style(elements, cssStyle, newStyle) {
