@@ -27,14 +27,11 @@ function game() {
   }
   document.querySelector("#gameWindow").style.width = 1920*width;
   document.querySelector("#gameWindow").style.height = 1080*height;
-  textboxWidth = 1160*width
-  textboxPoints = 115*width
-  textboxHeight = 262*height
-  document.querySelector("#textbox > #border > #top").style.borderBottom = String(textboxHeight/2)+"px solid #777";
-  document.querySelector("#textbox > #border > #bottom").style.borderTop = String(textboxHeight/2)+"px solid #777";
-  styleAll("#textbox > #border > *", "width", String(textboxWidth));
-  styleAll("#textbox > #border > *", "borderLeft", String(textboxPoints)+"px solid transparent");
-  styleAll("#textbox > #border > *", "borderRight", String(textboxPoints)+"px solid transparent");
+  document.querySelector("#textbox > #border > #top").style.borderBottom = String(131*height)+"px solid #777";
+  document.querySelector("#textbox > #border > #bottom").style.borderTop = String(131*height)+"px solid #777";
+  styleAll("#textbox > #border > *", "width", String(1160*width));
+  styleAll("#textbox > #border > *", "borderLeft", String(115*width)+"px solid transparent");
+  styleAll("#textbox > #border > *", "borderRight", String(115*width)+"px solid transparent");
   document.querySelector("#textbox > #content > #top").style.borderBottom = "25px solid #BBB";
   document.querySelector("#textbox > #content > #bottom").style.borderTop = "25px solid #BBB";
   styleAll("#textbox > #content > *", "width", "100px");
