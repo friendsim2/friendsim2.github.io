@@ -8,6 +8,7 @@ p {
 #gameWindow {
   background-color: #000;
   overflow: hidden;
+  position: relative;
 }
 
 #textbox > * {
