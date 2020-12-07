@@ -37,6 +37,7 @@ function game() {
   styleAll("#textbox > #content > *", "width", String(1150*width)+"px");
   styleAll("#textbox > #content > *", "borderLeft", String(105*width)+"px solid transparent");
   styleAll("#textbox > #content > *", "borderRight", String(105*width)+"px solid transparent");
+  styleAll("#textbox > #content", "bottom", String(10*height)+"px");
   
   
   // These requestAnimationFrames start the game and keep it going.
