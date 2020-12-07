@@ -5,16 +5,7 @@ var windowHeight = 720;
 var textboxWidth;
 var textboxHeight;
 
-function style(elements, cssStyle, newStyle) {
-  let x = document.querySelectorAll(elements);
-  for (let i = 0; i < x.length; i++) {
-    x[i].style[cssStyle] = newStyle;
-  }
-}
-
-// Game time
-function game() {
-  // Keeps everything the correct size.
+function fixSizes() {
   windowWidth = window.innerWidth;
   windowHeight = window.innerHeight;
   if (windowWidth/16 > windowHeight/9){
@@ -35,6 +26,20 @@ function game() {
   style("#textbox > #content > *", "borderLeft", String(105*scale)+"px solid transparent");
   style("#textbox > #content > *", "borderRight", String(105*scale)+"px solid transparent");
   style("#textbox > #content", "bottom", String(10*scale)+"px");
+}
+function style(elements, cssStyle, newStyle) {
+  let x = document.querySelectorAll(elements);
+  for (let i = 0; i < x.length; i++) {
+    x[i].style[cssStyle] = newStyle;
+  }
+}
+
+
+
+
+
+// Game time
+function game() {
   
   
   // These requestAnimationFrames start the game and keep it going.
