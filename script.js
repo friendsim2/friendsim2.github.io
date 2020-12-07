@@ -25,8 +25,8 @@ function game() {
     width = windowWidth/1920;
     height = (windowWidth*(9/16))/1080;
   }
-  document.querySelector("#gameWindow").style.width = 1920;
-  document.querySelector("#gameWindow").style.height = 1080;
+  document.querySelector("#gameWindow").style.width = 1920*width;
+  document.querySelector("#gameWindow").style.height = 1080*height;
   textboxWidth = 1160*width
   textboxPoints = 115*width
   textboxHeight = 262*height
