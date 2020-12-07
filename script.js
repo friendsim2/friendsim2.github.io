@@ -29,14 +29,14 @@ function game() {
   document.querySelector("#gameWindow").style.height = 1080*height;
   document.querySelector("#textbox > #border > #top").style.borderBottom = String(131*height)+"px solid #777";
   document.querySelector("#textbox > #border > #bottom").style.borderTop = String(131*height)+"px solid #777";
-  styleAll("#textbox > #border > *", "width", String(1160*width));
+  styleAll("#textbox > #border > *", "width", String(1160*width)+"px");
   styleAll("#textbox > #border > *", "borderLeft", String(115*width)+"px solid transparent");
   styleAll("#textbox > #border > *", "borderRight", String(115*width)+"px solid transparent");
-  document.querySelector("#textbox > #content > #top").style.borderBottom = "25px solid #BBB";
-  document.querySelector("#textbox > #content > #bottom").style.borderTop = "25px solid #BBB";
-  styleAll("#textbox > #content > *", "width", "100px");
-  styleAll("#textbox > #content > *", "borderLeft", "25px solid transparent");
-  styleAll("#textbox > #content > *", "borderRight", "25px solid transparent");
+  document.querySelector("#textbox > #content > #top").style.borderBottom = String(121*height)+"px solid #BBB";
+  document.querySelector("#textbox > #content > #bottom").style.borderTop = String(121*height)+"px solid #BBB";
+  styleAll("#textbox > #content > *", "width", String(1150*width)+"px");
+  styleAll("#textbox > #content > *", "borderLeft", String(105*width)+"px solid transparent");
+  styleAll("#textbox > #content > *", "borderRight", String(105*width)+"px solid transparent");
   
   
   // These requestAnimationFrames start the game and keep it going.
