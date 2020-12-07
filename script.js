@@ -25,6 +25,7 @@ function game() {
     width = windowWidth/1920;
     height = (windowWidth*(9/16))/1080;
   }
+  console.log(5==5);
   document.querySelector("#gameWindow").style.width = 1920*width;
   document.querySelector("#gameWindow").style.height = 1080*height;
   document.querySelector("#textbox > #border > #top").style.borderBottom = String(131*height)+"px solid #777";
