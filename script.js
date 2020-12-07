@@ -5,7 +5,7 @@ var windowHeight = 720;
 var textboxWidth;
 var textboxHeight;
 
-function styleAll(elements, cssStyle, newStyle) {
+function style(elements, cssStyle, newStyle) {
   let x = document.querySelectorAll(elements);
   for (let i = 0; i < x.length; i++) {
     x[i].style[cssStyle] = newStyle;
@@ -22,19 +22,19 @@ function game() {
   } else {
     scale = windowWidth/1920;
   }
-  document.querySelector("#gameWindow").style.width = 1920*scale;
-  document.querySelector("#gameWindow").style.height = 1080*scale;
-  document.querySelector("#textbox > #border > #top").style.borderBottom = String(131*scale)+"px solid #777";
-  document.querySelector("#textbox > #border > #bottom").style.borderTop = String(131*scale)+"px solid #777";
-  styleAll("#textbox > #border > *", "width", String(1160*scale)+"px");
-  styleAll("#textbox > #border > *", "borderLeft", String(115*scale)+"px solid transparent");
-  styleAll("#textbox > #border > *", "borderRight", String(115*scale)+"px solid transparent");
-  document.querySelector("#textbox > #content > #top").style.borderBottom = String(121*scale)+"px solid #BBB";
-  document.querySelector("#textbox > #content > #bottom").style.borderTop = String(121*scale)+"px solid #BBB";
-  styleAll("#textbox > #content > *", "width", String(1150*scale)+"px");
-  styleAll("#textbox > #content > *", "borderLeft", String(105*scale)+"px solid transparent");
-  styleAll("#textbox > #content > *", "borderRight", String(105*scale)+"px solid transparent");
-  styleAll("#textbox > #content", "bottom", String(10*scale)+"px");
+  style("#gameWindow", "width", String(1920*scale));
+  style("#gameWindow", "height", String(1080*scale));
+  style("#textbox > #border > #top", "borderBottom", String(131*scale)+"px solid #777");
+  style("#textbox > #border > #bottom", "borderTop", String(131*scale)+"px solid #777");
+  style("#textbox > #border > *", "width", String(1160*scale)+"px");
+  style("#textbox > #border > *", "borderLeft", String(115*scale)+"px solid transparent");
+  style("#textbox > #border > *", "borderRight", String(115*scale)+"px solid transparent");
+  style("#textbox > #content > #top", "borderBottom", String(121*scale)+"px solid #BBB");
+  style("#textbox > #content > #bottom", "borderTop", String(121*scale)+"px solid #BBB");
+  style("#textbox > #content > *", "width", String(1150*scale)+"px");
+  style("#textbox > #content > *", "borderLeft", String(105*scale)+"px solid transparent");
+  style("#textbox > #content > *", "borderRight", String(105*scale)+"px solid transparent");
+  style("#textbox > #content", "bottom", String(10*scale)+"px");
   
   
   // These requestAnimationFrames start the game and keep it going.
