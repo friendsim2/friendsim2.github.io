@@ -1,6 +1,10 @@
 * {
   margin: 0px;
 }
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
 p {
   font-weight: bold;
 }
